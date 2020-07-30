@@ -24,7 +24,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('var') {
-                    sh 'start.sh'
+                    sh 'bash ./start.sh'
                 }
             }
         }
