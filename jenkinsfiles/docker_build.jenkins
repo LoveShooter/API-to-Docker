@@ -23,7 +23,7 @@ pipeline {
         stage("create docker image") {
             steps {
                 echo " ============== start building image =================="
-                dir ('var') {
+                dir ('var/www/TestApp') {
                     sh 'bash ./start.sh'
                 }
             }
